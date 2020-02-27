@@ -1,44 +1,69 @@
 footer {
-	width:100%;
+	width:100vw;
 	height: 50px;
 	border: 1px solid black;
-    background: linear-gradient(to right, #34e89d6b, #0f34437e);
-    margin-top: 47.3rem;
+    background: linear-gradient(to right, #ee097850, #ff6a0049);
+    margin-top: 50.7rem;
+
+    @media @phone {
+        
+    }
 
     
 	
 	nav {
-        width: 98%;
+        width: 98vw;
 		.flex-Container(space-between, row, center);
 		margin-top: 5px;
 
 		@media (max-width: 500px) {
-			flex-direction: column;
+			.flex-Container(space-evenly, row, center);
             margin: 0;
-		}
-    }
+        }
+        
     
     p {
         margin: 8px 0 0 10px;
+
+        @media @phone {
+            margin: 0 auto;
+            font-size: 10px;
+            margin-top: 20px;
+        }
     }
 
 	a {
 		text-decoration: none;
-		color: white;
+		color: @lightWhite;
         padding: 5px;
+
+        @media @phone {
+            font-size: 12px;
+            margin-left: 30px;
+            display: none;
+        }
 
 
      &:hover {
         text-decoration: underline;
-        color: #34e89d;
     }   
 
     }
 
+
+    #button {
+        @media @phone {
+            display: none;
+        }
+    }
     
     
-   
+  
+      
+    }
+
 }
+   
 
 // dark theme
 // background: linear-gradient(to right, #34e89d6b, #0f34437e);
