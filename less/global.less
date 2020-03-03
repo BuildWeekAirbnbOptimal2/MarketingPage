@@ -79,7 +79,7 @@
 
     @media @phone {
       width: 100vw;
-      height: 100vh;
+      height: auto;
       background-size: cover;
 
     }
@@ -92,4 +92,11 @@
     font-weight: bold;
     font-family: 'Spartan';
   
+  }
+
+
+  @keyframes colorSwitch {
+    0%    {color: @lightWhite;}
+    50%   {color: @darkOrange;}
+    100%  {color: @lightWhite;}
   }

@@ -205,7 +205,7 @@ a {
 @media (max-width: 500px) {
   .container2 {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-size: cover;
   }
 }
@@ -214,6 +214,17 @@ a {
   font-size: 1.6rem;
   font-weight: bold;
   font-family: 'Spartan';
+}
+@keyframes colorSwitch {
+  0% {
+    color: #e9e4f0;
+  }
+  50% {
+    color: #ff6a0049;
+  }
+  100% {
+    color: #e9e4f0;
+  }
 }
 header {
   width: 100%;
@@ -275,6 +286,7 @@ header #logo {
   width: 5%;
   height: auto;
   margin-bottom: 7px;
+  filter: brightness(0) invert(1);
 }
 @media (max-width: 500px) {
   header #logo {
@@ -488,16 +500,31 @@ footer nav a:hover {
   height: 77%;
   position: absolute;
 }
+@media (max-width: 500px) {
+  .picsNLinks {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+}
 .picsNLinks .box2 {
   height: 77%;
   display: flex;
   justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   flex-wrap: wrap;
   background: linear-gradient(to right, #bdc3c75d, #2c3e505d);
   border: 1px solid black;
   margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .picsNLinks .box2 {
+    height: 1000px;
+    width: 100vw;
+    position: absolute;
+    padding: 2px;
+  }
 }
 .picsNLinks .box2 :nth-child(1) img {
   border: 3px solid #89253eb4;
@@ -523,6 +550,9 @@ footer nav a:hover {
 .picsNLinks .box2 :nth-child(8) img {
   border: 3px solid #34e89d;
 }
+.picsNLinks .box2 :nth-child(9) {
+  margin-bottom: 5rem;
+}
 .picsNLinks .box2 :nth-child(9) img {
   border: 3px solid #89253eb4;
 }
@@ -536,6 +566,19 @@ footer nav a:hover {
 .picsNLinks .Adrian,
 .picsNLinks .Kayla {
   width: 100px;
+}
+@media (max-width: 500px) {
+  .picsNLinks .Joel,
+  .picsNLinks .Jorge,
+  .picsNLinks .Leo,
+  .picsNLinks .Toni,
+  .picsNLinks .James,
+  .picsNLinks .Neha,
+  .picsNLinks .Max,
+  .picsNLinks .Adrian,
+  .picsNLinks .Kayla {
+    margin-top: 2rem;
+  }
 }
 .picsNLinks .Joel p,
 .picsNLinks .Jorge p,
@@ -576,6 +619,20 @@ footer nav a:hover {
   border-radius: 15px;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .picsNLinks .Joel img,
+  .picsNLinks .Jorge img,
+  .picsNLinks .Leo img,
+  .picsNLinks .Toni img,
+  .picsNLinks .James img,
+  .picsNLinks .Neha img,
+  .picsNLinks .Max img,
+  .picsNLinks .Adrian img,
+  .picsNLinks .Kayla img {
+    width: 200%;
+    height: auto;
+  }
+}
 .picsNLinks .Joel a,
 .picsNLinks .Jorge a,
 .picsNLinks .Leo a,
@@ -587,6 +644,18 @@ footer nav a:hover {
 .picsNLinks .Kayla a {
   margin-left: 18px;
   color: black;
+}
+.picsNLinks .Joel a:hover,
+.picsNLinks .Jorge a:hover,
+.picsNLinks .Leo a:hover,
+.picsNLinks .Toni a:hover,
+.picsNLinks .James a:hover,
+.picsNLinks .Neha a:hover,
+.picsNLinks .Max a:hover,
+.picsNLinks .Adrian a:hover,
+.picsNLinks .Kayla a:hover {
+  color: white;
+  text-decoration: none;
 }
 .picsNLinks h1 {
   color: #e9e4f0;
