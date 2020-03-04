@@ -1,21 +1,35 @@
+.mainContent {
+    width: 100vw;
+    height: 50rem;
+
+  @media @phone {
+        width: 100vw;
+        height: 100vh;
+    }
+
 .box {
     width: 50vw;
-    height: 47rem;
+    height: 49rem;
     background: linear-gradient(to right, #d3cce338, #e9e4f04b);
     border-radius: 15px;
     border: 1px solid black;
-    position: absolute;
-    .boxMargins();
+    margin: 1rem 0 0 1rem;
     
 
     @media @phone {
+        height: 62rem;
         width: 90vw;
-        margin-left: 20px;
+        margin: 1.5rem 0 0 1.5rem;
     }
+    
+
+  
 
     p {
         text-align: center;
         font-weight: bold;
         margin-top: 10px;
     }
+}
+
 }

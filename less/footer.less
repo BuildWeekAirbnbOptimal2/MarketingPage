@@ -1,12 +1,12 @@
 footer {
-	width:100vw;
-	height: 50px;
+    width: 100vw;
+    height: 5rem;
 	border: 1px solid black;
     background: linear-gradient(to right, #ee097850, #ff6a0049);
-    margin-top: 50.7rem;
+    margin: 0 auto;
 
     @media @phone {
-        
+        margin-top: 0;
     }
 
     
@@ -16,7 +16,7 @@ footer {
 		.flex-Container(space-between, row, center);
 		margin-top: 5px;
 
-		@media (max-width: 500px) {
+		@media @phone {
 			.flex-Container(space-evenly, row, center);
             margin: 0;
         }
