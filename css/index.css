@@ -184,7 +184,7 @@ img {
 @media (max-width: 500px) {
   .container {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-size: cover;
   }
 }
@@ -214,17 +214,6 @@ a {
   font-size: 1.6rem;
   font-weight: bold;
   font-family: 'Spartan';
-}
-@keyframes colorSwitch {
-  0% {
-    color: #e9e4f0;
-  }
-  50% {
-    color: #ff6a0049;
-  }
-  100% {
-    color: #e9e4f0;
-  }
 }
 header {
   width: 100%;
@@ -313,6 +302,9 @@ header .navA {
   flex-direction: row;
   align-items: center;
 }
+.aboutNav .home:hover {
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   .aboutNav {
     flex-direction: row;
@@ -370,10 +362,15 @@ header .navA {
 }
 footer {
   width: 100vw;
-  height: 50px;
+  height: 5rem;
   border: 1px solid black;
   background: linear-gradient(to right, #ee097850, #ff6a0049);
-  margin-top: 50.7rem;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 0;
+  }
 }
 footer nav {
   width: 98vw;
@@ -427,7 +424,12 @@ footer nav a:hover {
   height: 50px;
   border: 1px solid black;
   background: linear-gradient(to right, #3a6186cb, #89253eb4);
-  margin-top: 50.7rem;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .aboutFooter {
+    margin-top: 55.7rem;
+  }
 }
 .aboutFooter nav {
   width: 98vw;
@@ -476,36 +478,42 @@ footer nav a:hover {
     display: none;
   }
 }
-.box {
+.mainContent {
+  width: 100vw;
+  height: 50rem;
+}
+@media (max-width: 500px) {
+  .mainContent {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+.mainContent .box {
   width: 50vw;
-  height: 47rem;
+  height: 49rem;
   background: linear-gradient(to right, #d3cce338, #e9e4f04b);
   border-radius: 15px;
   border: 1px solid black;
-  position: absolute;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin: 1rem 0 0 1rem;
 }
 @media (max-width: 500px) {
-  .box {
+  .mainContent .box {
+    height: 62rem;
     width: 90vw;
-    margin-left: 20px;
+    margin: 1.5rem 0 0 1.5rem;
   }
 }
-.box p {
+.mainContent .box p {
   text-align: center;
   font-weight: bold;
   margin-top: 10px;
 }
 .picsNLinks {
-  width: 100%;
-  height: 77%;
-  position: absolute;
+  width: 100vw;
+  height: 50rem;
 }
 @media (max-width: 500px) {
   .picsNLinks {
-    position: relative;
     height: 100vh;
     width: 100vw;
   }
@@ -519,14 +527,13 @@ footer nav a:hover {
   flex-wrap: wrap;
   background: linear-gradient(to right, #bdc3c75d, #2c3e505d);
   border: 1px solid black;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 @media (max-width: 500px) {
   .picsNLinks .box2 {
-    height: 1000px;
+    height: 100rem;
     width: 100vw;
-    position: absolute;
-    padding: 2px;
+    padding: 0;
   }
 }
 .picsNLinks .box2 :nth-child(1) img {
@@ -568,20 +575,8 @@ footer nav a:hover {
 .picsNLinks .Max,
 .picsNLinks .Adrian,
 .picsNLinks .Kayla {
-  width: 100px;
-}
-@media (max-width: 500px) {
-  .picsNLinks .Joel,
-  .picsNLinks .Jorge,
-  .picsNLinks .Leo,
-  .picsNLinks .Toni,
-  .picsNLinks .James,
-  .picsNLinks .Neha,
-  .picsNLinks .Max,
-  .picsNLinks .Adrian,
-  .picsNLinks .Kayla {
-    margin-top: 2rem;
-  }
+  width: 10rem;
+  margin: 6rem 2rem 0 0;
 }
 .picsNLinks .Joel p,
 .picsNLinks .Jorge p,
@@ -620,7 +615,7 @@ footer nav a:hover {
   width: 100%;
   height: auto;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 @media (max-width: 500px) {
   .picsNLinks .Joel img,
